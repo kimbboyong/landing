@@ -1,0 +1,526 @@
+.ready {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 909090909090909090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ready a {
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 40px;
+    border: 1px solid #ddd;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.ready a:hover {
+    background-color: #555;
+    color: #ddd;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container .inner {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    background: #F3F1F4;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.30);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.container .inner::after {}
+
+.container .inner::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+    min-width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+
+.section .title {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section .title::after {
+    content: "";
+    display: flex;
+    width: 130px;
+    height: 1px;
+    background: #ccc;
+    margin-top: 30px;
+}
+
+.gif_img {
+    position: fixed;
+    bottom: 50px;
+    left: 150px;
+    z-index: 9999;
+    width: 50vw;
+}
+
+.gif_img .gif_back {
+    position: absolute;
+    top: -170px;
+    left: -190px;
+}
+
+.gif_img .gif_play,
+.gif_img .gif_back {
+    display: none;
+    transition: 1s ease;
+}
+
+.gif_img.on .gif_play {
+    display: block;
+}
+
+.gif_img.on.reverse .gif_play {
+    display: block;
+    transform: scaleX(-1);
+}
+
+.gif_img.on .gif_stop {
+    display: none;
+}
+
+.gif_img .gif_back.on {
+    display: block;
+}
+
+/* section_01 */
+.section_01 .wrap {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+.section_01 .wrap figure {
+    width: 400px;
+    position: absolute;
+    left: 0;
+}
+
+.section_01 .wrap .txt {
+    width: 90%;
+    text-align: right;
+}
+
+.section_01 .wrap .txt .top {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-bottom: 1px solid #ccc;
+}
+
+.section_01 .wrap .txt .top h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.section_01 .wrap .txt .top span {
+    font-size: 30px;
+}
+
+.section_01 .wrap .txt .bottom {
+    margin-top: 50px;
+
+}
+
+.section_01 .wrap .txt .bottom span {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 25px;
+}
+
+.section_01 .wrap .txt .bottom .arrow_box {
+    display: block;
+    background: url(../images/arrow.png) no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.section_01 .wrap .txt .bottom .next {
+    transform: rotate(180deg);
+}
+
+/* section_02 */
+.section_02 {
+    position: relative;
+}
+
+.section_02 .wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .section_02 .title {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section_02 .title::after {
+    content: "";
+    display: flex;
+    width: 130px;
+    height: 1px;
+    background: #ccc;
+    margin-top: 30px;
+} */
+
+.section_02 .title h1 {
+    font-size: 60px;
+}
+
+.section_02 .txt {
+    text-align: center;
+
+}
+
+
+
+.section_02 .txt p {
+    font-size: 25px;
+    word-break: keep-all;
+    margin-bottom: 30px;
+    line-height: 1.5;
+
+}
+
+.section_02 .txt strong {
+    font-family: 'BMHANNAPro';
+}
+
+/* section_03 */
+.section_03 {
+    position: relative;
+}
+
+.section_03 .wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .section_03 .title {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_03 .title::after {
+    content: "";
+    display: flex;
+    width: 130px;
+    height: 1px;
+    background: #ccc;
+    margin-top: 30px;
+} */
+
+.section_03 .title h1 {
+    font-size: 60px;
+}
+
+.section_03 li {
+    margin-bottom: 40px;
+}
+
+.section_03 li .content {
+    margin-top: 15px;
+}
+
+.section_03 li .content p {
+    font-size: 25px;
+}
+
+/* section_04 */
+.section_04 {
+    padding: 0;
+    position: relative;
+}
+
+.section_04 .wrap {
+    display: flex;
+}
+
+.section_04 .title {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.section_04 .title h1 {
+    font-size: 50px;
+}
+
+.section_04 .left {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+}
+
+/* .section_04 .left .content {
+    width: 100%;
+} */
+
+.section_04 .right {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.section_04 .right .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section_04 .content .logo {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section_04 .c_title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.section_04 .c_title h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.section_04 .c_title p {
+    font-size: 25px;
+}
+
+.section_04 .c_bottom {
+    padding-top: 15px;
+}
+
+.section_04 .c_bottom p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.section_04 .c_bottom ul {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section_04 .c_bottom li {
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+
+.section_04 .more {
+    width: 140px;
+    height: 40px;
+
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.section_04 .more a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 18px;
+    transition: .4s ease;
+    position: relative;
+}
+
+.section_04 .more a:hover {
+    padding-right: 20px;
+}
+
+.section_04 .more a:hover::after {
+    content: "";
+    display: block;
+    background: url(../images/right.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* section_05 */
+
+.section_05 {
+    position: relative;
+}
+
+.section_05 .wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .section_05 .title {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section_05 .title::after {
+    content: "";
+    display: flex;
+    width: 130px;
+    height: 1px;
+    background: #ccc;
+    margin-top: 30px;
+} */
+
+.section_05 .title h1 {
+    font-size: 60px;
+}
+
+.section_05 .txt {
+    text-align: center;
+
+}
+
+
+.section_05 .txt a {
+    display: block;
+    font-size: 25px;
+    word-break: keep-all;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.section_05 .txt a:hover {
+    font-family: 'BMHANNAPro';
+}
+
+@media screen and (max-width: 1440px) {
+
+
+    .section .title h1,
+    .section .title h1 {
+        font-size: 50px;
+    }
+
+    .section_02 .txt p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section_03 ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section_03 li {
+        margin-bottom: 30px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .section_03 li .content p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .section_04 .c_title h1 {
+        font-size: 40px;
+    }
+
+    .section_04 .content .logo {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 0 auto 20px;
+    }
+
+    .section_04 .c_title {
+        padding-bottom: 10px;
+    }
+
+    .section_04 .c_bottom {
+        padding-top: 10px;
+    }
+
+
+    .section_04 .c_title p {
+        font-size: 20px;
+    }
+
+    .section_04 .c_bottom p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .section_04 .c_bottom li {
+        padding: 7px 10px;
+    }
+
+    .section_04 .c_bottom ul {
+        margin-bottom: 15px;
+    }
+}
